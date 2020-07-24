@@ -11,11 +11,8 @@ class School
        @grade = grade
        @roster[@grade] = []
        @roster[@grade] << student
-    else
-      @roster[grade] << student
-    end
-  end
-
+    else @roster[grade] << student 
+  end 
   def grade(grade)
     return @roster[grade]
   end
@@ -27,4 +24,5 @@ class School
       end
     sorted_roster
   end
+end
 end
